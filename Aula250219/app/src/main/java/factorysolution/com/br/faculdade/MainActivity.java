@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -40,13 +41,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // Verifica se o elemento clicado é o que nos interessa
         if (view.getId() == R.id.btn_calcular) {
-
+            Toast.makeText( this, "Ola Mundo", Toast.LENGTH_LONG).show();
             // Obtém o valor do EditText
             Double mReal = Double.valueOf(this.editReal.getText().toString());
+
+            //Fazer a validação caso não tenha inserido qualquer valor
 
             // Converte valores
             this.textDollar.setText(String.format("%.2f", mReal * 3));
             this.textEuro.setText(String.format("%.2f", mReal * 4));
+
+
         }
     }
 
