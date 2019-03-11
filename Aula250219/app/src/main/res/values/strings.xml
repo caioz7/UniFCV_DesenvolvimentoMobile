@@ -6,4 +6,7 @@
     <string name="valor_em_euro">Valor em Euro:</string>
     <string name="euro">Euro</string>
     <string name="calcular">Calcular</string>
+    <string name="valor_do_dolar">Valor do dolar</string>
+    <string name="valor_do_euro">Valor do euro</string>
+    <string name="clear">Limpar</string>
 </resources>
