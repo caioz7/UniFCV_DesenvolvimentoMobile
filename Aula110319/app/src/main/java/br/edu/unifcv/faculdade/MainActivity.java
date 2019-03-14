@@ -8,9 +8,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import br.edu.unifcv.faculdade.constants.ConversorMoedasConstants;
+import br.edu.unifcv.faculdade.utils.SecurityPreferences;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ViewHolder mViewHolder = new ViewHolder();
+    private SecurityPreferences mSeuSecurityPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +30,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // Adiciona evento de click no elemento
         this.setEventsOnButtons();
+
+        //Instanciando nossa Classe que encapsula om Shared Preferences
+        this.mSeuSecurityPreferences = new SecurityPreferences(this);
 
     }
 
@@ -72,7 +79,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // Converte valores
             this.mViewHolder.textDollar.setText(String.format("%.2f", mReal / mCotacaoDolar_));
             this.mViewHolder.textEuro.setText(String.format("%.2f", mReal / mCotacaoEuro_));
+
+            this.saveSecurirityPreferences();
         }
+    }
+
+    private void saveSecurirityPreferences() {
+        this.mSeuSecurityPreferences.storeString(ConversorMoedasConstants.VALOR_REAL,
+                mViewHolder.editReal.getText().toString());
+    }
+    @Override
+    protected void onResume(){
+        super.onResume();
+        this.loadSecurityPreferences();
+
+    }
+
+    private void loadSecurityPreferences() {
+        this.mViewHolder.editReal
+                .setText(this.mSeuSecurityPreferences
+                        .getStoredString(ConversorMoedasConstants.VALOR_REAL));
     }
 
     private boolean isDadosValidos() {
