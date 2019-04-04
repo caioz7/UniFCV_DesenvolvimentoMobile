@@ -1,4 +1,4 @@
-#Mon Mar 18 22:05:04 BRT 2019
+#Mon Mar 25 21:38:13 BRT 2019
 base.0=/home/caio/gitHub/UniFCV_DesenvolvimentoMobile/Aula180319/app/build/intermediates/transforms/dexMerger/debug/1
 path.0=classes.dex
 renamed.0=classes.dex

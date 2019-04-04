@@ -1075,15 +1075,16 @@ id barrier
 id beginning
 id blocking
 id bottom
-id btn_Logar
 id btn_calcular
 id btn_limpar
 id buttonPanel
+id button_logar
 id center
 id center_horizontal
 id center_vertical
 id chains
 id checkbox
+id chk_lembrar
 id chronometer
 id clip_horizontal
 id clip_vertical
@@ -1107,6 +1108,8 @@ id disableHome
 id edit_cot_dollar
 id edit_cot_euro
 id edit_query
+id edit_senha
+id edit_usuario
 id edit_valor
 id end
 id enterAlways

@@ -19,7 +19,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="br.edu.unifcv.faculdade.MainActivity" />
-        <activity android:name="br.edu.unifcv.faculdade.loginActivity" >
+        <activity android:name="br.edu.unifcv.faculdade.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
