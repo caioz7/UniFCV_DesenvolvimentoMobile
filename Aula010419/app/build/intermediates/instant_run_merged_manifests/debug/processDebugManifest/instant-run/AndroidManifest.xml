@@ -18,8 +18,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="br.edu.unifcv.faculdade.LoginActivity" />
         <activity android:name="br.edu.unifcv.faculdade.ConversorActivity" />
-        <activity android:name="br.edu.unifcv.faculdade.LoginActivity" >
+        <activity android:name="br.edu.unifcv.faculdade.Dashboard" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

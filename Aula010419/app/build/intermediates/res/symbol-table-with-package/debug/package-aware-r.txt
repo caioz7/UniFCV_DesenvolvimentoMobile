@@ -636,6 +636,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color lightgray
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1005,6 +1006,7 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable circle
+drawable cor_fundo_conversor
 drawable dash
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -1012,6 +1014,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_attach_money_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1020,6 +1023,7 @@ drawable ic_mtrl_chip_close_circle
 drawable img_authentication
 drawable img_checkbox_checked
 drawable img_checkbox_uncheck
+drawable img_money
 drawable img_user
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1306,6 +1310,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_dashboard
 layout activity_login
 layout activity_main
 layout design_bottom_navigation_item
