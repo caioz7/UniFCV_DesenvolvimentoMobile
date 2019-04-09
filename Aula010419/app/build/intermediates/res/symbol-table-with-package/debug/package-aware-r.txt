@@ -1006,6 +1006,7 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable circle
+drawable cor_fundo_carros
 drawable cor_fundo_conversor
 drawable dash
 drawable design_bottom_navigation_item_background
@@ -1015,6 +1016,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_attach_money_black_24dp
+drawable ic_car
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1083,6 +1085,7 @@ id btn_calcular
 id btn_limpar
 id buttonPanel
 id button_logar
+id card_conversor
 id center
 id center_horizontal
 id center_vertical
@@ -1386,6 +1389,7 @@ string bottom_sheet_behavior
 string calcular
 string character_counter_content_description
 string character_counter_pattern
+string conversor_moeda_dash
 string cot_eruo
 string cota_o_dollar
 string dolar
@@ -1402,6 +1406,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string qual_o_valor_em_real
+string realize_suas_conver_es
 string search_menu_title
 string senha
 string status_bar_notification_info_overflow

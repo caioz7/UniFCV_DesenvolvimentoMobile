@@ -16,7 +16,7 @@ public class UsuarioService {
 
 
     public boolean isLoginOk() {
-        return mUsuario.getNome().equalsIgnoreCase("usuario@usuario.com") &&
+        return mUsuario.getNome().equalsIgnoreCase("caio") &&
                mUsuario.getSenha().equalsIgnoreCase("123mudar");
     }
 

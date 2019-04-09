@@ -76,18 +76,18 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /home/caio/.gradle/
 		ADDED from /home/caio/gitHub/UniFCV_DesenvolvimentoMobile/Aula010419/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /home/caio/gitHub/UniFCV_DesenvolvimentoMobile/Aula010419/app/src/main/AndroidManifest.xml:11:9-40
-activity#br.edu.unifcv.faculdade.LoginActivity
-ADDED from /home/caio/gitHub/UniFCV_DesenvolvimentoMobile/Aula010419/app/src/main/AndroidManifest.xml:12:9-60
+activity#br.edu.unifcv.faculdade.Dashboard
+ADDED from /home/caio/gitHub/UniFCV_DesenvolvimentoMobile/Aula010419/app/src/main/AndroidManifest.xml:12:9-56
 	android:name
-		ADDED from /home/caio/gitHub/UniFCV_DesenvolvimentoMobile/Aula010419/app/src/main/AndroidManifest.xml:12:19-48
+		ADDED from /home/caio/gitHub/UniFCV_DesenvolvimentoMobile/Aula010419/app/src/main/AndroidManifest.xml:12:19-44
 activity#br.edu.unifcv.faculdade.ConversorActivity
 ADDED from /home/caio/gitHub/UniFCV_DesenvolvimentoMobile/Aula010419/app/src/main/AndroidManifest.xml:13:9-55
 	android:name
 		ADDED from /home/caio/gitHub/UniFCV_DesenvolvimentoMobile/Aula010419/app/src/main/AndroidManifest.xml:13:19-52
-activity#br.edu.unifcv.faculdade.Dashboard
+activity#br.edu.unifcv.faculdade.LoginActivity
 ADDED from /home/caio/gitHub/UniFCV_DesenvolvimentoMobile/Aula010419/app/src/main/AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from /home/caio/gitHub/UniFCV_DesenvolvimentoMobile/Aula010419/app/src/main/AndroidManifest.xml:14:19-44
+		ADDED from /home/caio/gitHub/UniFCV_DesenvolvimentoMobile/Aula010419/app/src/main/AndroidManifest.xml:14:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /home/caio/gitHub/UniFCV_DesenvolvimentoMobile/Aula010419/app/src/main/AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN

@@ -12,4 +12,6 @@
     <string name="lembrar_me">Lembrar-me</string>
     <string name="usuario">Usuário</string>
     <string name="senha">Senha</string>
+    <string name="conversor_moeda_dash">Conversor Moeda</string>
+    <string name="realize_suas_conver_es">Realize suas converções</string>
 </resources>

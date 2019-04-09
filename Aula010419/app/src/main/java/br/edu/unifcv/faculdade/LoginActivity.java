@@ -71,7 +71,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if (mUsuarioService.isDadosValidos()) {
             if (mUsuarioService.isLoginOk()) {
                 this.saveSecurityPreferences();
-                Intent intent = new Intent(this, ConversorActivity.class);
+                Intent intent = new Intent(this, Dashboard.class); //Defino qual tela abrir ao realizar o login
                 intent.putExtras(this.passUserName(this.getUsuario().getNome()));
                 startActivity(intent);
                 finish();
@@ -86,8 +86,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private Bundle passUserName(String nome) {
       Bundle bundle = new Bundle();
-      bundle.putString(ConversorMoedasConstants.USUARIO, nome);
-      bundle.putString(ConversorMoedasConstants.SENHA, "123");
+      bundle.putString(ConversorMoedasConstants.USUARIO, nome); //usuario: caio
+      bundle.putString(ConversorMoedasConstants.SENHA, "123"); //Senha: 123mudar
       return bundle;
     }
 

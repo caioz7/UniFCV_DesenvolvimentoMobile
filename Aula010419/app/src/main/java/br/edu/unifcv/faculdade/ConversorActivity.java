@@ -38,19 +38,19 @@ public class ConversorActivity extends AppCompatActivity implements View.OnClick
         this.mSecurityPreferences = new SecurityPreferences(this);
 
         // lendo as informações que vem da tela de login
-        this.loadParams();
+//        this.loadParams();
 
     }
 
-    private void loadParams() {
-        Intent intent = getIntent();
-        Bundle bundle = intent.getExtras();
-
-        String valor = bundle.getString(ConversorMoedasConstants.USUARIO) + " : " +
-                       bundle.getString(ConversorMoedasConstants.SENHA);
-
-        this.mViewHolder.textUsuario.setText(valor);
-    }
+//    private void loadParams() {
+//        Intent intent = getIntent();
+//        Bundle bundle = intent.getExtras();
+//
+//        String valor = bundle.getString(ConversorMoedasConstants.USUARIO) + " : " +
+//                       bundle.getString(ConversorMoedasConstants.SENHA);
+//
+//        this.mViewHolder.textUsuario.setText(valor);
+//    }
 
     private void setEventsOnButtons() {
         this.mViewHolder.buttonCalculate.setOnClickListener(this);
