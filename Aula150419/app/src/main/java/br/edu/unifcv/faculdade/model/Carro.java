@@ -1,7 +1,10 @@
 package br.edu.unifcv.faculdade.model;
 
+import android.graphics.drawable.Drawable;
+
 public class Carro {
 
+    public Drawable picture;
     private int id;
     private String modelo;
     private int potencia;
@@ -12,6 +15,9 @@ public class Carro {
         this.modelo = modelo;
         this.potencia = potencia;
         this.preco = preco;
+    }
+
+    public Carro(int id, String audi_r8, String audi, int i, Double valueOf, Drawable drawable) {
     }
 
     public int getId() {
