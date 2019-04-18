@@ -11,7 +11,7 @@ public class UsuarioService {
     }
 
     public boolean isLoginOk() {
-        return mUsuario.getNome().trim().equalsIgnoreCase("admin")
+        return mUsuario.getNome().trim().equalsIgnoreCase("faculdade@faculdade.com")
                 && mUsuario.getSenha().trim().equalsIgnoreCase("123mudar");
     }
 }

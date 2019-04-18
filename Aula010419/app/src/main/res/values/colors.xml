@@ -13,7 +13,4 @@
     <color name="editTextBG">#DADADA</color>
 
     <color name="textColor">#6e6e6e</color>
-    <!--Dashboard -->
-    <color name="lightgray">#ededed</color>
-
 </resources>

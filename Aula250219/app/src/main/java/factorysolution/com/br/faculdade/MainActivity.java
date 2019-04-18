@@ -10,14 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private EditText editReal;
-    private TextView textDollar;
-    private TextView textEuro;
-    private Button buttonCalculate;
-    private Button buttonClear;
-    private EditText editDolar;
-    private EditText editEuro;
-
+    private ViewHolder viewHolder = new ViewHolder();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,20 +20,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         // Busca os elementos da interface
-        this.editReal = (EditText) this.findViewById(R.id.edit_valor);
-        this.editDolar= (EditText) this.findViewById(R.id.edit_dolar);
-        this.editEuro= (EditText) this.findViewById(R.id.edit_euro);
-        this.textDollar = (TextView) this.findViewById(R.id.txt_dollar);
-        this.textEuro = (TextView) this.findViewById(R.id.txt_euro);
-        this.buttonCalculate = (Button) this.findViewById(R.id.btn_calcular);
-        this.buttonClear= (Button) this.findViewById(R.id.btn_clear);
+        this.viewHolder.editReal = (EditText) this.findViewById(R.id.edit_valor);
+        this.viewHolder.textDollar = (TextView) this.findViewById(R.id.txt_dollar);
+        this.viewHolder.textEuro = (TextView) this.findViewById(R.id.txt_euro);
+        this.viewHolder.buttonCalculate = (Button) this.findViewById(R.id.btn_calcular);
 
         // Limpa os valores iniciais
         this.clearValues();
 
         // Adiciona evento de click no elemento
-        this.buttonCalculate.setOnClickListener(this);
-        this.buttonClear.setOnClickListener(this);
+        this.viewHolder.buttonCalculate.setOnClickListener(this);
+
     }
 
     @Override
@@ -49,20 +39,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Verifica se o elemento clicado é o que nos interessa
         if (view.getId() == R.id.btn_calcular) {
 
-            if(this.editReal.getText().length() >=  1 && this.editEuro.getText().length() >= 1 && this.editDolar.getText().length() >= 1){
-                Double mReal = Double.valueOf(this.editReal.getText().toString());
-                Double mDolar = Double.valueOf(this.editDolar.getText().toString());
-                Double mEuro = Double.valueOf(this.editEuro.getText().toString());
+            // Obtém o valor do EditText
+            Toast.makeText(this, "Ola mundo", Toast.LENGTH_LONG).show();
+            Double mReal = Double.valueOf(this.viewHolder.editReal.getText().toString());
 
-                // Converte valores
-                this.textDollar.setText(String.format("%.2f", mReal * mDolar));
-                this.textEuro.setText(String.format("%.2f", mReal * mEuro));
-            }else {
-                Toast.makeText(this, "Preencha todos os campos!!",Toast.LENGTH_SHORT).show();
-            }
-        }//Limpa os campos se pressionar o botao "Limpar"
-        else if(view.getId() == R.id.btn_clear){
-            this.clearValues();
+            // Converte valores
+            this.viewHolder.textDollar.setText(String.format("%.2f", mReal * 3));
+            this.viewHolder.textEuro.setText(String.format("%.2f", mReal * 4));
         }
     }
 
@@ -70,13 +53,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * Limpa os valores iniciais
      */
     private void clearValues() {
-        this.editEuro.setText("");
-        this.editReal.setText("");
-        this.editDolar.setText("");
-        this.textDollar.setText("");
-        this.textEuro.setText("");
+        this.viewHolder.textDollar.setText("");
+        this.viewHolder.textEuro.setText("");
+    }
+
+    private static class ViewHolder {
+        public EditText editReal;
+        public TextView textDollar;
+        public TextView textEuro;
+        public Button buttonCalculate;
+
     }
 
 
 }
-
